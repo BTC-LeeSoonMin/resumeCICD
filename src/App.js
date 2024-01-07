@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          resume PJT test!!
+          resume pjt 1
         </a>
       </header>
     </div>
