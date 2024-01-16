@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import Home from './pages/Home';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          resume pjt 101
-        </a>
-      </header>
+      <React.Fragment>
+        <CssBaseline />
+        <Container maxWidth="sm" sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+          <Home />
+        </Container>
+      </React.Fragment>
+      
     </div>
   );
 }
-
-export default App;
