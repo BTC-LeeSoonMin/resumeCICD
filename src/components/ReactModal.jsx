@@ -24,7 +24,7 @@ export default function ReactModal() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 1000,
-        height: 650,
+        height: 400,
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
@@ -46,11 +46,7 @@ export default function ReactModal() {
                 onClose={closeModal}
             >
                 <Box sx={{ ...modalBoxStyle }}>
-                    <iframe 
-                        src="https://gupodong-seal.tistory.com/161"
-                        style={{ width: '100%', height: '100%' }}
-                        title="저는 React로 이런 것을 할 수 있습니다."
-                    />
+                    TEST~~
                 </Box>
             </Modal>
         </React.Fragment >

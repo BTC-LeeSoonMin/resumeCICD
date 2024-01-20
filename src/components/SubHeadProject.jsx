@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import PortfolioPJT from './PortfolioPJT';
+import SwimpyoPJT from './SwimpyoPJT';
+import BooglingPJT from './BooglingPJT';
 
 export default function SubHeadProject() {
 
@@ -10,6 +12,10 @@ export default function SubHeadProject() {
                 Project
             </Typography>
             <PortfolioPJT />
+            <br />
+            <SwimpyoPJT />
+            <br />
+            <BooglingPJT />
             <br />
         </React.Fragment>
     );

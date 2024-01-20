@@ -9,7 +9,8 @@ export default function App() {
     <div className="App">
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="sm" sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+        {/* <Container maxWidth="sm" sx={{ bgcolor: '#cfe8fc', height: '100vh' }}> */}
+        <Container maxWidth="sm" sx={{ height: '100vh' }}>
           <Home />
         </Container>
       </React.Fragment>

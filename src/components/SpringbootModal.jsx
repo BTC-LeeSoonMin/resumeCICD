@@ -46,11 +46,7 @@ export default function SpringbootModal() {
                 onClose={closeModal}
             >
                 <Box sx={{ ...style }}>
-                    <iframe 
-                        src="https://gupodong-seal.tistory.com/162" 
-                        style={{ width: '100%', height: '100%' }} 
-                        title="저는 Springboot로 이런 것을 할 수 있습니다."
-                    />
+                    SPRINGBOOT 모달 TEST~
                 </Box>
             </Modal>
         </React.Fragment >

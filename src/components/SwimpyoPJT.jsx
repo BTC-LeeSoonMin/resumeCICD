@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { Box } from '@mui/material';
 import Tooltip from '@mui/material/Tooltip';
 import Modal from "@mui/material/Modal";
+import SwimpyoImage from './SwimpyoImage';
 
-export default function PortfolioPJT() {
+export default function SwimpyoPJT() {
     // 모달창 on/off (브라우저 width가 1024미만이면 새창으로 띄움)
     const openInNewTab = url => {
         window.open(url, '_blank').focus();
@@ -40,7 +41,7 @@ export default function PortfolioPJT() {
         pt: 2,
         px: 4,
         pb: 3,
-    }; 
+    };
 
     const outerBoxStyle = {
         position: 'relative',
@@ -70,8 +71,9 @@ export default function PortfolioPJT() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
+                    <SwimpyoImage />
                     <Box sx={lineBoxStyle} >
-                        PortfolioPJT~
+                        SwimpyoPJT
                     </Box>
                 </Box>
                 <Modal
@@ -80,9 +82,9 @@ export default function PortfolioPJT() {
                 >
                     <Box sx={{ ...modalBoxStyle }}>
                         <iframe
-                            src="https://gupodong-seal.tistory.com/161"
+                            src="https://gupodong-seal.tistory.com/166"
                             style={{ width: '100%', height: '100%' }}
-                            title="저는 React로 이런 것을 할 수 있습니다."
+                            title="쉼표 PJT 설명이 작성된 블로그 링크 입니다."
                         />
                     </Box>
                 </Modal>
