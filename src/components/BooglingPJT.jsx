@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import Tooltip from '@mui/material/Tooltip';
 import Modal from "@mui/material/Modal";
 import BooglingImage from './BooglingImage';
+import BooglingPjtExp from './BooglingPjtExp';
 
 export default function BooglingPJT() {
     // 모달창 on/off (브라우저 width가 1024미만이면 새창으로 띄움)
@@ -33,7 +34,7 @@ export default function BooglingPJT() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 1000,
+        width: '90%',
         height: 650,
         bgcolor: 'background.paper',
         border: '2px solid #000',
@@ -49,7 +50,6 @@ export default function BooglingPJT() {
         height: 400,
         borderTop: '1px solid #000',
         borderBottom: '1px solid #000',
-        bgcolor: "skyblue",
         cursor: 'pointer'
     };
 
@@ -72,8 +72,8 @@ export default function BooglingPJT() {
                     onMouseLeave={handleMouseLeave}
                 >
                     <BooglingImage />
-                    <Box sx={lineBoxStyle} >
-                        BooglingPJT
+                    <Box sx={lineBoxStyle} align="left">
+                        <BooglingPjtExp />
                     </Box>
                 </Box>
                 <Modal

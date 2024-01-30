@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Box } from '@mui/material';
 import Tooltip from '@mui/material/Tooltip';
 import Modal from "@mui/material/Modal";
+import PortfolioImage from './PortfolioImage';
+import PortfolioPjtExp from './PortfolioPjtExp';
 
 export default function PortfolioPJT() {
     // 모달창 on/off (브라우저 width가 1024미만이면 새창으로 띄움)
@@ -48,7 +50,6 @@ export default function PortfolioPJT() {
         height: 400,
         borderTop: '1px solid #000',
         borderBottom: '1px solid #000',
-        bgcolor: "skyblue",
         cursor: 'pointer'
     };
 
@@ -70,8 +71,9 @@ export default function PortfolioPJT() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <Box sx={lineBoxStyle} >
-                        PortfolioPJT~
+                    <PortfolioImage />
+                    <Box sx={lineBoxStyle} align="left">
+                        <PortfolioPjtExp />
                     </Box>
                 </Box>
                 <Modal

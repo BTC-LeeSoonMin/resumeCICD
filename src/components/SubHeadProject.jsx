@@ -3,6 +3,8 @@ import Typography from '@mui/material/Typography';
 import PortfolioPJT from './PortfolioPJT';
 import SwimpyoPJT from './SwimpyoPJT';
 import BooglingPJT from './BooglingPJT';
+import Carousel from 'react-material-ui-carousel';
+import { Box } from '@mui/material';
 
 export default function SubHeadProject() {
 
@@ -11,12 +13,12 @@ export default function SubHeadProject() {
             <Typography variant="h5" align="left">
                 Project
             </Typography>
-            <PortfolioPJT />
-            <br />
-            <SwimpyoPJT />
-            <br />
-            <BooglingPJT />
-            <br />
+            <Carousel>
+                <PortfolioPJT />
+                <SwimpyoPJT />
+                <BooglingPJT />
+            </Carousel>
+            <Box sx={{mt: 10}}>&nbsp;</Box>
         </React.Fragment>
     );
 }

@@ -1,52 +1,48 @@
 import * as React from 'react';
+
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import InfoList from './InfoList';
 
 export default function SubHeadAboutMe() {
 
+
     const infos = [
         {
-            title: "전화번호",
+            title: "📞",
             text: "010-4580-8075",
         },
         {
-            title: "Email",
+            title: "💌",
             text: "soonmin07@gmail.com",
         },
         {
-            title: "생년월일",
-            text: "1994/05/10",
+            title: "🌐",
+            text: "GitHub",
+            link: "https://github.com/BTC-LeeSoonMin"
         },
         {
-            title: "GitHub",
-            text: "github.com/BTC-LeeSoonMin",
-        },
-        {
-            title: "Blog",
-            text: "gupodong-seal.tistory.com/",
+            title: "👋",
+            text: "Blog",
+            link: "https://gupodong-seal.tistory.com/"
         },
     ]
 
     return (
         <React.Fragment>
             <Box align="left" >
-                <Typography variant="h4" >
-                    이순민
+                <Typography variant="h4" sx={{ fontFamily: 'NPSfontBold' }}>
+                    안녕하세요,<br />성장형 개발자 이순민입니다.
                 </Typography>
-                &nbsp;&nbsp;성장형 개발자<br /><br />
+                <Typography variant="subtitle2" sx={{ mt: 1, fontFamily: 'Georgia' }}>
+                    저의 성장뿐만 아니라 회사, 동료와 함께 성장하는 공동 성장을 지향합니다.<br /><br />
+                </Typography>
                 {
                     infos.map((info) => (
                         <InfoList info={info} key={info.title}></InfoList>
                     ))
                 }
                 <br />
-                <Typography variant="h5" sx={{ display: 'inline' }}>
-                    About me&nbsp;&nbsp;
-                </Typography>
-                <Typography variant="body" >
-                    안녕하세요.
-                </Typography>
             </Box>
         </React.Fragment>
 
