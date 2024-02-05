@@ -8,7 +8,7 @@ export default function SubHeadSkill() {
     return (
         <React.Fragment>
             <Typography variant="h5" align="left">
-                Skill
+                Skill 
             </Typography>
             <Typography align="left">
                 <Typography sx={{ display: 'inline', fontWeight: 'bold' }}>FrontEnd : </Typography>
