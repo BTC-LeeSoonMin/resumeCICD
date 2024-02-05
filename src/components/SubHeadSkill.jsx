@@ -18,7 +18,7 @@ export default function SubHeadSkill() {
                 <Typography sx={{ display: 'inline', fontWeight: 'bold' }}>DB : </Typography>
                 MySQL, MongoDB<br />
                 <Typography sx={{ display: 'inline', fontWeight: 'bold' }}>Tool : </Typography>
-                Git&Github, Jira, Postman ...
+                Git&Github, Jira, Postman
             </Typography>
 
 
