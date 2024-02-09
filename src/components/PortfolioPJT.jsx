@@ -16,7 +16,7 @@ export default function PortfolioPJT() {
 
     const openModal = () => {
         window.innerWidth < 1024
-            ? openInNewTab("https://gupodong-seal.tistory.com/161")
+            ? openInNewTab("https://gupodong-seal.tistory.com/166")
             : setIsModalOpen(true);
     }
     const closeModal = () => setIsModalOpen(false);
@@ -82,7 +82,7 @@ export default function PortfolioPJT() {
                 >
                     <Box sx={{ ...modalBoxStyle }}>
                         <iframe
-                            src="https://gupodong-seal.tistory.com/161"
+                            src="https://gupodong-seal.tistory.com/166"
                             style={{ width: '100%', height: '100%' }}
                             title="저는 React로 이런 것을 할 수 있습니다."
                         />
