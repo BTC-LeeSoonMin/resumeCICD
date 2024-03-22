@@ -16,7 +16,7 @@ export default function BooglingPJT() {
 
     const openModal = () => {
         window.innerWidth < 1024
-            ? openInNewTab("https://gupodong-seal.tistory.com/161")
+            ? openInNewTab("https://gupodong-seal.tistory.com/165")
             : setIsModalOpen(true);
     }
     const closeModal = () => setIsModalOpen(false);
