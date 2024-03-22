@@ -5,7 +5,7 @@ export default function PortfolioPjtExp() {
     return (
         <React.Fragment >
             <Typography variant="h6" sx={{mt: 1.5, fontFamily: 'JalnanGothic'}} >
-                포트폴리오
+                포트폴리오 
             </Typography>
             <Typography variant="subtitle2" sx={{fontFamily: 'JalnanGothic', color: '#8d8f8d'}}>
                 개인 프로젝트
